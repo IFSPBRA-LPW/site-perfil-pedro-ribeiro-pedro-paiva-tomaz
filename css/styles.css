@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +5,7 @@
     font-family: 'Roboto', sans-serif;
     color: #222222;
 }
+
 body {
     background-color: #EFEFEF;
 }
@@ -13,6 +13,7 @@ body {
 header {
     text-align: center;
     padding: 2rem 1rem;
+    margin-bottom: 5.5rem
 }
 
 header h1 {
@@ -26,27 +27,20 @@ header h3 {
     font-weight: 400;
 }
 
-
 main {
     width: 90vw;
     margin: auto;
 }
 
-
-.laranja {
-    background: linear-gradient(135deg, #F06449, #d94c32);
+.card-laranja {
+    background-color: rgb(255, 115, 0);
     text-align: center;
-    padding: 7rem 2rem 3rem 2rem; 
-    border-radius: 1rem;
-    position: relative;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-    margin-top: 6rem; 
+    padding: 2rem 1rem;
+    position:relative;
+    border-radius: 0.5rem;
 }
 
-
-.card-laranja h2,
-.card-laranja p,
-.card-laranja a {
+.card-laranja h2, .card-laranja p, .card-laranja a {
     color: #FFFFFF;
 }
 
@@ -59,26 +53,13 @@ main {
     margin-bottom: 1rem;
 }
 
-
 .foto {
-    width: 11rem;
+    width: 90%;
+    max-width: 12rem;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 50%;
+    border-radius: 50%; 
     
-    position: absolute;
-    top: -5.5rem; 
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-
-    border: 6px solid #FFFFFF;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    transition: transform 0.3s ease;
-}
-
-.foto:hover {
-    transform: translateX(-50%) scale(1.05);
+    margin-top: -8rem
 }
 
 .redes {
@@ -88,19 +69,10 @@ main {
     margin-top: 1rem;
 }
 
-.redes a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.redes a:hover {
-    text-decoration: underline;
-}
-
 
 .sobre-mim {
     padding: 2rem 1rem;
+    text-align: center;
 }
 
 .sobre-mim h2 {
@@ -108,11 +80,11 @@ main {
     margin-bottom: 1rem;
 }
 
-.contato {
+.botao-contato {
     margin-top: 1rem;
     padding: 0.7rem;
     border: none;
-    background-color: #1FA6B6;
+    background-color: rgb(224, 11, 128);
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -120,6 +92,7 @@ main {
 
 .detalhes {
     padding: 2rem 1rem;
+    text-align: center;
 }
 
 .detalhes h2 {
@@ -134,7 +107,6 @@ main {
 .detalhes li {
     margin-bottom: 0.5rem;
 }
-
 
 footer {
     background-color: #3A3A3A;
